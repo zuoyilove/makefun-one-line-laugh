@@ -1,7 +1,7 @@
 # One-Line Laugh — NOTES
 
 任务：u-ronigrv-the-one-line-laugh-7ccca46f（The One-Line Laugh），$5（第1/2名各 $2，第3名 $1），免费，盲轮制。
-截止：2026-11-24 15:50 CST（07:50Z）；盲轮：23:50Z / 03:50Z / 07:50Z —— 本轮目标赶上 11:50 CST（03:50Z）第二轮。
+截止：2026-11-24 15:50 CST（07:50Z）；盲轮三轮：第 1 轮 07:50 CST、第 2 轮 11:50 CST、最终轮 15:50 CST（即截止）。
 参赛：2,136 条（2026-11-24 07:2x CST 读回）。门：/output/entry.txt 为 1–200 字符 UTF-8 单句；dev 评级前 500 名进决赛热（Swiss 3 轮 + 前 5 playoff）。
 
 ## 条目
@@ -25,5 +25,5 @@
      （不加 --no-family 的发现式打包也可，dry-run 已验证 18 个会话全在窗口内、prompt/system-prompt/MCP 均就绪，唯一缺的就是用量行；完整 dry-run 日志：~/workspace/makefun/tmp/one-line-laugh-dryrun2.log）
   3. `node cli/makefun.mjs check --bundle ./one-line-laugh-bundle.tar.gz --repo-url https://github.com/zuoyilove/makefun-one-line-laugh --commit <SHA>`（以 check --help 为准）全过后 submit：
      `node cli/makefun.mjs submit --competition u-ronigrv-the-one-line-laugh-7ccca46f --repo-url https://github.com/zuoyilove/makefun-one-line-laugh --commit <SHA> --title "Noise-cancelling headphones" --bundle ./one-line-laugh-bundle.tar.gz --keypair ../makefun-keypair.json`
-  4. 轮询 GET /api/submissions/<id>/status 到 checked/scored；盲轮下一轮 11:50 CST（03:50Z），尽量在那之前交上。
+  4. 轮询 GET /api/submissions/<id>/status 到 checked/scored。时间：07:31 CST 时第 1 轮截止（07:50 CST）还剩约 19 分钟——若父会话能立即打包可赶第 1 轮；赶不上也无妨，11:50 CST 第 2 轮前交上同样进决赛热筛选（最终 cut 按最新一轮排名定）。
 - 配额：本任务 max_per_day 5（UTC 日）；本账号今日尚未交过本任务。
